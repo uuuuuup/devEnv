@@ -1,0 +1,28 @@
+### bashrc, inputrc 세팅
+
+## vi ~/.bashrc
+myfind() {
+if [ -z $2 ]
+then
+    find . | grep --color=auto $1 2> /dev/null
+else
+    find $1 | grep --color=auto $2 2> /dev/null
+fi
+}
+
+mygrep() {
+if [ -z $2 ]
+then
+    find . | xargs -n 20 grep --color=auto $1 2> /dev/null
+else
+    find $1 | xargs -n 20 grep --color=auto $2 2> /dev/null
+fi
+}
+
+## vi ~/.inputrc
+# for x86
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+# for mac
+"\e[A": history-search-backward
+"\e[B": history-search-forward
