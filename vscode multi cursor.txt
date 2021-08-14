@@ -1,0 +1,21 @@
+vscode multiple cursor edit
+
+# 마우스 클릭한곳에 멀티 커서 추가
+alt + left click
+opt + left click
+
+# 한줄씩 멀티 커서 생성
+ctrl + alt + arrow
+cmd + opt + arrow
+
+# 같은 단어를 모두 찾아서 멀티 커서 추가
+ctrl + shift + L 
+cmd + shift + L
+
+# 선택된 단어와 같은 단어 하나씩 찾으면서 멀티커서 추가 
+ctrl + d
+cmd + d
+
+# 블록 선택하면서 멀티커서 추가
+shift + alt + mouse drag
+shift + opt + mouse drag
